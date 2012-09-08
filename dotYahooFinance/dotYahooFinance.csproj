@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HistoricalQuotes\HistoricalQuotes.cs" />
+    <Compile Include="HistoricalQuotes\HistoricalQuotesInterval.cs" />
+    <Compile Include="HistoricalQuotes\HistoricalQuotesParameters.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quotes\Quotes.cs" />
     <Compile Include="Quotes\QuotesParameters.cs" />
