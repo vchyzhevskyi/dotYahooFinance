@@ -54,6 +54,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dotYahooFinance\dotYahooFinance.csproj">
+      <Project>{7C6715CB-5F5C-4DD1-BF2A-41B88E15DAAB}</Project>
+      <Name>dotYahooFinance</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,7 +8,7 @@
     <ProjectGuid>{7C6715CB-5F5C-4DD1-BF2A-41B88E15DAAB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dotYahooFinance</RootNamespace>
+    <RootNamespace>Coirius</RootNamespace>
     <AssemblyName>dotYahooFinance</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quotes\Quotes.cs" />
+    <Compile Include="Quotes\QuotesParameters.cs" />
+    <Compile Include="Quotes\QuotesProperty.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
