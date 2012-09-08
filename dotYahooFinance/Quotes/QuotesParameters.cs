@@ -1,11 +1,12 @@
 ﻿using System;
+using Coirius.dotYahooFinance.Base;
 
 namespace Coirius.dotYahooFinance.Quotes
 {
 	/// <summary>
 	/// Quotes parameters
 	/// </summary>
-	public class QuotesParameters
+	public class QuotesParameters : AbstractQuotesParameters
 	{
 		/// <summary>
 		/// Comma-separeted IDs
@@ -62,12 +63,12 @@ namespace Coirius.dotYahooFinance.Quotes
 		/// Get request url
 		/// </summary>
 		/// <returns>Url</returns>
-		internal string GetUrl()
+		internal override string GetUrl()
 		{
 			string url = "http://download.finance.yahoo.com/d/quotes.csv?s=";
 			url = (IDs.Length > 0 && url.Length > 0) ? string.Format("{0}{1}", url, IDs) : "";
 			url = (Properties.Length > 0 && url.Length > 0) ? string.Format("{0}&f={1}", url, Properties) : "";
-			url = (url.Length > 0) ? string.Format("{0}&e={1}", url, "csv") : "";
+			url = (url.Length > 0) ? string.Format("{0}&e=csv", url) : "";
 			if (url.Length <= 0)
 				throw new NullReferenceException("Url is empty");
 			return url;

@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Coirius.dotYahooFinance.Base;
 
 namespace Coirius.dotYahooFinance.HistoricalQuotes
 {
-	public class HistoricalQuotesParameters
+	public class HistoricalQuotesParameters : AbstractQuotesParameters
 	{
 		/// <summary>
 		/// ID
@@ -98,14 +96,14 @@ namespace Coirius.dotYahooFinance.HistoricalQuotes
 		/// Get request url
 		/// </summary>
 		/// <returns>Url</returns>
-		internal string GetUrl()
+		internal override string GetUrl()
 		{
 			string url = "http://ichart.yahoo.com/table.csv?s=";
 			url = (ID.Length > 0 && url.Length > 0) ? string.Format("{0}{1}", url, ID) : "";
 			url = (url.Length > 0) ? string.Format("{0}&a={1}&b={2}&c={3}", url, FromDate.Month - 1, FromDate.Day, FromDate.Year) : "";
 			url = (url.Length > 0) ? string.Format("{0}&d={1}&e={2}&f={3}", url, ToDate.Month - 1, ToDate.Day, ToDate.Year) : "";
 			url = (url.Length > 0) ? string.Format("{0}&g={1}", url, Interval) : "";
-			url = (url.Length > 0) ? string.Format("{0}&ignore={1}", url, "csv") : "";
+			url = (url.Length > 0) ? string.Format("{0}&ignore=csv", url) : "";
 			if (url.Length <= 0)
 				throw new NullReferenceException("Url is empty");
 			return url;
