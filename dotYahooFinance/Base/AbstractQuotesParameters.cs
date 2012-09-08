@@ -1,12 +1,7 @@
-﻿using System;
-
-namespace Coirius.dotYahooFinance.Base
+﻿namespace Coirius.dotYahooFinance.Base
 {
-	internal abstract class AbstractQuotesParameters
+	public abstract class AbstractQuotesParameters
 	{
-		internal abstract string GetUrl()
-		{
-			throw new NotImplementedException();
-		}
+		internal abstract string GetUrl();
 	}
 }

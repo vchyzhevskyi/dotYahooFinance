@@ -8,7 +8,7 @@
     <ProjectGuid>{7C6715CB-5F5C-4DD1-BF2A-41B88E15DAAB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Coirius</RootNamespace>
+    <RootNamespace>dotYahooFinance</RootNamespace>
     <AssemblyName>dotYahooFinance</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -40,9 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\AbstractQuotesParameters.cs" />
     <Compile Include="HistoricalQuotes\HistoricalQuotes.cs" />
     <Compile Include="HistoricalQuotes\HistoricalQuotesInterval.cs" />
     <Compile Include="HistoricalQuotes\HistoricalQuotesParameters.cs" />
+    <Compile Include="MarketQuotes\MarketQuotes.cs" />
+    <Compile Include="MarketQuotes\MarketQuotesParameters.cs" />
+    <Compile Include="MarketQuotes\MarketQuotesProperty.cs" />
+    <Compile Include="MarketQuotes\MarketQuotesSector.cs" />
+    <Compile Include="MarketQuotes\MarketQuotesSortDirection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quotes\Quotes.cs" />
     <Compile Include="Quotes\QuotesParameters.cs" />
