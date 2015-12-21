@@ -1,4 +1,5 @@
 ﻿using System;
+using VChyzhevskyi.dotYahooFinance.Facades;
 using VChyzhevskyi.dotYahooFinance.HistoricalQuotes;
 using VChyzhevskyi.dotYahooFinance.MarketQuotes;
 using VChyzhevskyi.dotYahooFinance.Quotes;
@@ -17,6 +18,17 @@ namespace VChyzhevskyi.dotYahooFinance.Example
             Console.WriteLine(
                 new MarketQuotes.MarketQuotes(new MarketQuotesParameters().WithProperty(MarketQuotesProperty.coname)
                     .WithSortDirection(MarketQuotesSortDirection.u).WithSector(MarketQuotesSector.Technology)).Download());
+
+            var facade = new HistoricalQuotesFacade();
+            var quotes = facade.Get(new HistoricalQuotesParameters()
+                .WithID("GOOG")
+                .WithFromDate(DateTime.Today.AddDays(-7))
+                .WithToDate(DateTime.Today.AddDays(-1)));
+            foreach (var quote in quotes)
+            {
+                Console.WriteLine(quote);
+            }
+
             Console.ReadKey();
         }
     }

@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\AbstractQuotesParameters.cs" />
+    <Compile Include="Facades\HistoricalQuotesFacade.cs" />
     <Compile Include="HistoricalQuotes\HistoricalQuotes.cs" />
     <Compile Include="HistoricalQuotes\HistoricalQuotesInterval.cs" />
     <Compile Include="HistoricalQuotes\HistoricalQuotesParameters.cs" />
