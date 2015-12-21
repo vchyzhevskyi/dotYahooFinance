@@ -1,4 +1,4 @@
-﻿namespace Coirius.dotYahooFinance.MarketQuotes
+﻿namespace VChyzhevskyi.dotYahooFinance.MarketQuotes
 {
 	public class MarketQuotesSector
 	{

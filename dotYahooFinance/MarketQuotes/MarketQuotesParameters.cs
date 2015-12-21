@@ -1,7 +1,7 @@
 ﻿using System;
-using Coirius.dotYahooFinance.Base;
+using VChyzhevskyi.dotYahooFinance.Base;
 
-namespace Coirius.dotYahooFinance.MarketQuotes
+namespace VChyzhevskyi.dotYahooFinance.MarketQuotes
 {
 	public class MarketQuotesParameters : AbstractQuotesParameters
 	{

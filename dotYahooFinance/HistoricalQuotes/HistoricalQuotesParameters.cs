@@ -1,7 +1,7 @@
 ﻿using System;
-using Coirius.dotYahooFinance.Base;
+using VChyzhevskyi.dotYahooFinance.Base;
 
-namespace Coirius.dotYahooFinance.HistoricalQuotes
+namespace VChyzhevskyi.dotYahooFinance.HistoricalQuotes
 {
 	public class HistoricalQuotesParameters : AbstractQuotesParameters
 	{

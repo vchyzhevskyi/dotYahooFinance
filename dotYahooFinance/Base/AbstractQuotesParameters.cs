@@ -1,4 +1,4 @@
-﻿namespace Coirius.dotYahooFinance.Base
+﻿namespace VChyzhevskyi.dotYahooFinance.Base
 {
 	public abstract class AbstractQuotesParameters
 	{

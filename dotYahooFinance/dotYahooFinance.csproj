@@ -8,8 +8,8 @@
     <ProjectGuid>{7C6715CB-5F5C-4DD1-BF2A-41B88E15DAAB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dotYahooFinance</RootNamespace>
-    <AssemblyName>dotYahooFinance</AssemblyName>
+    <RootNamespace>VChyzhevskyi.dotYahooFinance</RootNamespace>
+    <AssemblyName>VChyzhevskyi.dotYahooFinance</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

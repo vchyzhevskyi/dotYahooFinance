@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Coirius.dotYahooFinance.Quotes
+namespace VChyzhevskyi.dotYahooFinance.Quotes
 {
 	/// <summary>
 	/// Get quotes from Yahoo! Finance

@@ -1,7 +1,7 @@
 ﻿using System;
-using Coirius.dotYahooFinance.Base;
+using VChyzhevskyi.dotYahooFinance.Base;
 
-namespace Coirius.dotYahooFinance.Quotes
+namespace VChyzhevskyi.dotYahooFinance.Quotes
 {
 	/// <summary>
 	/// Quotes parameters

@@ -1,4 +1,4 @@
-﻿namespace Coirius.dotYahooFinance.HistoricalQuotes
+﻿namespace VChyzhevskyi.dotYahooFinance.HistoricalQuotes
 {
 	public enum HistoricalQuotesInterval
 	{

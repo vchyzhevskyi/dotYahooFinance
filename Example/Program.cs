@@ -1,21 +1,23 @@
 ﻿using System;
-using Coirius.dotYahooFinance.HistoricalQuotes;
-using Coirius.dotYahooFinance.MarketQuotes;
-using Coirius.dotYahooFinance.Quotes;
+using VChyzhevskyi.dotYahooFinance.HistoricalQuotes;
+using VChyzhevskyi.dotYahooFinance.MarketQuotes;
+using VChyzhevskyi.dotYahooFinance.Quotes;
 
-namespace Example
+namespace VChyzhevskyi.dotYahooFinance.Example
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			Console.WriteLine(new Quotes(new QuotesParameters().WithID("GOOG").WithProperty(QuotesProperty.l1)).Download());
-			Console.WriteLine(new HistoricalQuotes(
-				new HistoricalQuotesParameters().WithID("GOOG").WithFromDate(DateTime.Today.AddDays(-1))
-				.WithToDate(DateTime.Today.AddDays(-1))).Download());
-			Console.WriteLine(new MarketQuotes(new MarketQuotesParameters().WithProperty(MarketQuotesProperty.coname)
-				.WithSortDirection(MarketQuotesSortDirection.u).WithSector(MarketQuotesSector.Technology)).Download());
-			Console.ReadKey();
-		}
-	}
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            Console.WriteLine(
+                new Quotes.Quotes(new QuotesParameters().WithID("GOOG").WithProperty(QuotesProperty.l1)).Download());
+            Console.WriteLine(new HistoricalQuotes.HistoricalQuotes(
+                new HistoricalQuotesParameters().WithID("GOOG").WithFromDate(DateTime.Today.AddDays(-1))
+                    .WithToDate(DateTime.Today.AddDays(-1))).Download());
+            Console.WriteLine(
+                new MarketQuotes.MarketQuotes(new MarketQuotesParameters().WithProperty(MarketQuotesProperty.coname)
+                    .WithSortDirection(MarketQuotesSortDirection.u).WithSector(MarketQuotesSector.Technology)).Download());
+            Console.ReadKey();
+        }
+    }
 }

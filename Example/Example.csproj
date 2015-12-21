@@ -8,8 +8,8 @@
     <ProjectGuid>{4092AC26-8C85-430F-B220-432AEC3D4BD6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Example</RootNamespace>
-    <AssemblyName>Example</AssemblyName>
+    <RootNamespace>VChyzhevskyi.dotYahooFinance.Example</RootNamespace>
+    <AssemblyName>VChyzhevskyi.dotYahooFinance.Example</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>

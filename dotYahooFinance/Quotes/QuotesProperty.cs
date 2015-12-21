@@ -1,4 +1,4 @@
-﻿namespace Coirius.dotYahooFinance.Quotes
+﻿namespace VChyzhevskyi.dotYahooFinance.Quotes
 {
 	public enum QuotesProperty
 	{

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Coirius.dotYahooFinance.MarketQuotes
+namespace VChyzhevskyi.dotYahooFinance.MarketQuotes
 {
 	public class MarketQuotes
 	{
